@@ -16,6 +16,17 @@ $(document).ready(function(){
 
 
 
+
+
+    $('.menu-btn').on('click', function(e) {
+        e.preventDefault;
+        $(this).toggleClass('menu-btn_active');
+        $('.menu-burger').toggleClass('menu-burger_active');
+        $('html').toggleClass('overflow-h');
+    });
+
+
+
     // отображение части блока по нажатию на кнопку
 
     $('body').on('click', '.button-show', function () {
